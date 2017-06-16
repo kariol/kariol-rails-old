@@ -1,0 +1,49 @@
+before_script:
+  - apt-get update
+  - apt-get install apt-transport-https
+  - echo "deb https://cli-assets.heroku.com/branches/stable/apt ./" > /etc/apt/sources.list.d/heroku.list
+  - wget -O- https://cli-assets.heroku.com/apt/release.key | apt-key add -
+  - apt-get update
+  - apt-get install -y heroku
+  - gem install dpl
+
+stages:
+  - test
+  - build
+  - deploy
+
+test:
+  stage: test
+  script: echo "Running tests"
+
+build:
+  stage: build
+  script: echo "Building the app"
+
+deploy_staging:
+  stage: deploy
+  variables:
+    HEROKU_API_KEY: $HEROKU_API_KEY
+  script:
+    - echo "Deploy to staging server"
+    - dpl --provider=heroku --app=$HEROKU_STAGING_APP --api-key=$HEROKU_API_KEY
+    - heroku run rails db:migrate --exit-code --app $HEROKU_STAGING_APP
+  environment:
+    name: staging
+    url: https://mvp1day-rails-staging.herokuapp.com
+  only:
+    - master
+
+deploy_production:
+  stage: deploy
+  variables:
+    HEROKU_API_KEY: $HEROKU_API_KEY
+  script:
+    - echo "Deploy to production server"
+    - dpl --provider=heroku --app=$HEROKU_PRODUCTION_APP --api-key=$HEROKU_API_KEY
+    - heroku run rails db:migrate --exit-code --app $HEROKU_PRODUCTION_APP
+  environment:
+    name: production
+    url: https://mvp1day-rails.herokuapp.com
+  only:
+    - tags

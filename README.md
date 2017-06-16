@@ -1,1 +1,2 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+## Staging
+[![build status](https://gitlab.com/mvp1day/mvp1day-rails/badges/master/build.svg)](https://gitlab.com/mvp1day/mvp1day-rails/commits/master)
