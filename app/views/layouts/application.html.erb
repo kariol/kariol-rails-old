@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <title><%= yield_with_default(:title, 'mvp1day.com') %></title>
+    <meta name="description" content="<%= yield_with_default(:description, 'DESCRIPTION') %>">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
+
+    <meta property="fb:app_id" content=""/>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="mvp1day">
+    <meta property="og:url" content="https://mvp1day.com">
+    <meta property="og:title" content="<%= yield_with_default(:title, 'mvp1day.com') %>">
+    <meta property="og:description" content="<%= yield_with_default(:description, 'DESCRIPTION') %>">
+    <meta property="og:image" content="">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mvp1day">
+    <meta name="twitter:creator" content="@mvp1day">
+    <meta name="twitter:title" content="<%= yield_with_default(:title, 'mvp1day.com') %>">
+    <meta name="twitter:description" content="<%= yield_with_default(:description, 'DESCRIPTION') %>">
+    <meta name="twitter:image:src" content="">
 
     <%= stylesheet_link_tag 'application', media: 'all' %>
   </head>
