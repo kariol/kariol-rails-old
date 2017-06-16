@@ -23,6 +23,10 @@ module Mvp1dayRails
       generate.helper false
     end
 
+    config.time_zone = 'Paris'
+    config.i18n.default_locale = :fr
+    config.i18n.available_locales = [:fr, :en]
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
