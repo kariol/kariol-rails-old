@@ -15,6 +15,7 @@ gem 'rest-client'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
+gem 'cookies_eu'
 gem 'font-awesome-sass'
 gem 'jquery-rails'
 gem 'sass-rails'
