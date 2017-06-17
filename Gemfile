@@ -43,6 +43,7 @@ group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'bullet'
+  gem 'letter_opener'
   gem 'listen', '~> 3.0.5'
   gem 'pry-byebug'
   gem 'pry-rails'

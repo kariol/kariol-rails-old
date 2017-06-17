@@ -10,3 +10,6 @@ fr:
       top_call_to_action: Action !
   users:
     index:
+  user_mailer:
+    welcome:
+      subject: Vous êtes inscrit sur mvp1day.com
