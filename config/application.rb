@@ -25,6 +25,7 @@ module Mvp1dayRails
 
     config.time_zone = 'Paris'
     config.i18n.default_locale = :fr
+    config.i18n.fallbacks = true
     config.i18n.available_locales = [:fr, :en]
 
     # Settings in config/environments/* take precedence over those specified here.

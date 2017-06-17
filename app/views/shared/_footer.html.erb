@@ -11,13 +11,13 @@
       </div>
 
       <div class="hidden-xs col-sm-3 text-center", id="legal">
-        <%= link_to 'Mentions légales', legal_path %>
+        <%= link_to t('.legal'), legal_path %>
       </div>
 
       <div class="col-xs-7 col-sm-4 text-right">
         <div class="info">
-          <p>TODO</p>
-          <p><%= mail_to 'todo@todo.com' %></p>
+          <p><%= t 'meta-title' %></p>
+          <p><%= mail_to t('meta-mail') %></p>
         </div>
       </div>
     </div>

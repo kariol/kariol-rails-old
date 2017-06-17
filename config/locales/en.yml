@@ -1,3 +1,11 @@
 en:
+  shared:
+    footer:
+      legal: Legal terms
+    navbar:
+      profile: Profile
+      sign_in: Login
+      sign_out: Logout
+      top_call_to_action: Action!
   users:
     index:
