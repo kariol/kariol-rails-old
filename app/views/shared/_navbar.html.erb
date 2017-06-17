@@ -36,14 +36,21 @@
                 <i class="fa fa-user"></i> <%= t(".profile") %>
               <% end %>
             </li>
-            <li>
-              <%= link_to "#" do %>
-                <i class="fa fa-lock"></i>  <%= t(".admin") %>
-              <% end %>
-            </li>
+            <% if current_user.admin? %>
+              <li>
+                <%= link_to admin_root_path do %>
+                <i class="fa fa-lock"></i> <%= t(".admin") %>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to sidekiq_web_path do %>
+                <i class="fa fa-lock"></i> Sidekiq
+                <% end %>
+              </li>
+            <% end %>
             <li>
               <%= link_to destroy_user_session_path, method: :delete do %>
-                <i class="fa fa-sign-out"></i>  <%= t(".sign_out") %>
+                <i class="fa fa-sign-out"></i> <%= t(".sign_out") %>
               <% end %>
             </li>
           </ul>
