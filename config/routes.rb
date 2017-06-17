@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   scope '(:locale)', locale: /en/ do
     root to: 'pages#home'
     get '/legal', to: 'pages#legal'
+
+    resources :users
   end
 end
