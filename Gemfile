@@ -11,6 +11,7 @@ gem "gmaps4rails"
 gem 'jbuilder', '~> 2.0'
 gem 'omniauth-facebook'
 gem 'pg'
+gem 'postmark-rails'
 gem 'puma'
 gem 'pundit'
 gem 'rails', '~> 5.0.0'
