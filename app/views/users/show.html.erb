@@ -7,7 +7,7 @@
 
 <p>
   <strong>Photo:</strong>
-  <%= @user.photo %>
+  <%= cl_image_tag(@user.photo.path, width: 256, height: 256, crop: :fill) if @user.photo %>
 </p>
 
 <% if policy(@user).edit? %>

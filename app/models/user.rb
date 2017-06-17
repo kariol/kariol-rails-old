@@ -9,6 +9,8 @@ class User < ApplicationRecord
 
   enum role: { customer: 0, admin: 9 }
 
+  has_attachment :photo
+
   def self.find_for_facebook_oauth(auth)
     user_params = auth.slice(:provider, :uid)
     user_params.merge! auth.info.slice(:email, :first_name, :last_name)
