@@ -10,6 +10,7 @@
 //= require underscore
 //= require gmaps/google
 //= require cookies_eu
+//= require active_admin
 //= require cable
 //= require_tree ./channels
 //= require_tree ./content
