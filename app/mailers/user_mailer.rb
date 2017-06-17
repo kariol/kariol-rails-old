@@ -12,17 +12,17 @@ class UserMailer < ApplicationMailer
     mail to: @user.email
   end
 
-  def confirmation_instructions(record, token, opts={})
+  def confirmation_instructions(record, token, opts = {})
     @token = token
     devise_mail(record, :confirmation_instructions, opts)
   end
 
-  def reset_password_instructions(record, token, opts={})
+  def reset_password_instructions(record, token, opts = {})
     @token = token
     devise_mail(record, :reset_password_instructions, opts)
   end
 
-  def unlock_instructions(record, token, opts={})
+  def unlock_instructions(record, token, opts = {})
     @token = token
     devise_mail(record, :unlock_instructions, opts)
   end

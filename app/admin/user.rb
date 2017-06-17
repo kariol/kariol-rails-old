@@ -38,7 +38,7 @@ ActiveAdmin.register User do
       f.input :last_name
       f.input :address
       f.input :born_at
-      f.input :photo, :as => :formtastic_attachinary
+      f.input :photo, as: :formtastic_attachinary
     end
     f.inputs 'Admin' do
       f.input :role
