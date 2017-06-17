@@ -17,6 +17,8 @@ gem 'rails', '~> 5.0.0'
 gem 'rails-i18n', '~> 5.0.0'
 gem 'redis'
 gem 'rest-client'
+gem 'sidekiq'
+gem 'sidekiq-failures'
 
 gem 'attachinary'
 gem 'autoprefixer-rails'
