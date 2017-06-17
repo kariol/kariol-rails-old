@@ -42,6 +42,12 @@
     <%= render 'shared/footer' %>
     <%= render 'cookies_eu/consent_banner' %>
 
+    <!-- Google Places API for address autocomplete -->
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=places&key=#{ENV['GOOGLE_API_BROWSER_KEY']}" %>
+    <!-- Google Maps API (gmaps4rails) -->
+    <%= javascript_include_tag "https://cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/markerclusterer/src/markerclusterer_compiled.js" %>
+    <%= javascript_include_tag "https://cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js" %>
+
     <%= javascript_include_tag 'application' %>
     <%= cloudinary_js_config %>
     <%= yield(:js) %>

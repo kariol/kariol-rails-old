@@ -5,6 +5,8 @@ gem 'devise'
 gem 'devise-i18n'
 gem 'draper'
 gem 'figaro'
+gem 'geocoder'
+gem "gmaps4rails"
 gem 'jbuilder', '~> 2.0'
 gem 'omniauth-facebook'
 gem 'pg'
@@ -29,6 +31,10 @@ gem 'momentjs-rails'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
+
+source 'https://rails-assets.org' do
+  gem "rails-assets-underscore"
+end
 
 group :development, :test do
   gem 'better_errors'

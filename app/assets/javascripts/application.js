@@ -7,6 +7,8 @@
 //= require moment
 //= require moment/fr
 //= require bootstrap-datetimepicker
+//= require underscore
+//= require gmaps/google
 //= require cookies_eu
 //= require cable
 //= require_tree ./channels
