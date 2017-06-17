@@ -6,6 +6,16 @@
 </p>
 
 <p>
+  <strong>Address:</strong>
+  <%= @user.address %>
+</p>
+
+<p>
+  <strong>Born at:</strong>
+  <%= l(@user.born_at, format: :long) rescue nil %>
+</p>
+
+<p>
   <strong>Photo:</strong>
   <%= cl_image_tag(@user.photo.path, width: 256, height: 256, crop: :fill) if @user.photo %>
 </p>
