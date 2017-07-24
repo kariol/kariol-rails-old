@@ -1,2 +1,2 @@
 ## Staging
-[![build status](https://gitlab.com/mvp1day/mvp1day-rails/badges/master/build.svg)](https://gitlab.com/mvp1day/mvp1day-rails/commits/master)
+[![build status](https://gitlab.com/kariol/kariol-rails/badges/master/build.svg)](https://gitlab.com/kariol/kariol-rails/commits/master)

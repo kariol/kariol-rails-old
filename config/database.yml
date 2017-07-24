@@ -23,13 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: mvp1day-rails_development
+  database: kariol_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: mvp1day-rails
+  #username: kariol
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: mvp1day-rails_test
+  database: kariol_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: mvp1day-rails_production
-  username: mvp1day-rails
-  password: <%= ENV['MVP1DAY-RAILS_DATABASE_PASSWORD'] %>
+  database: kariol_production
+  username: kariol
+  password: <%= ENV['KARIOL_DATABASE_PASSWORD'] %>
