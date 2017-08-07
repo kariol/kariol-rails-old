@@ -1,3 +1,6 @@
+//= require turbolinks
+//= require cable
+//= require_tree ./channels
 //= require jquery
 //= require jquery_ujs
 //= require jquery-fileupload/basic
@@ -11,6 +14,4 @@
 //= require gmaps/google
 //= require cookies_eu
 //= require active_admin
-//= require cable
-//= require_tree ./channels
 //= require_tree ./content
